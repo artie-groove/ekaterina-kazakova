@@ -1,0 +1,83 @@
+// Your variable overrides
+
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1200px)
+
+$spacer: 1rem
+$spacers: (6: $spacer * 4, 7: $spacer * 5, 8: $spacer * 6, 9: $spacer * 7, 10: $spacer * 8)
+
+// sizes
+$grid-gutter-width: 24px
+$font-size-base: 1rem
+
+// Bootstrap and its default variables
+@import "../builder/node_modules/bootstrap/scss/bootstrap";
+
+html
+	font-size: 14px
+	+media-breakpoint-up(md)
+		font-size: 16px
+	+media-breakpoint-up(lg)
+		font-size: 20px
+
+body
+	max-width: 1536px
+	margin: 0 auto
+
+.wrapper
+	padding: 0 calc(2.5% + #{$grid-gutter-width / 2})
+
+.top
+	background: url('../images/bg-top.jpg') 50% 50% / cover, #fafafa
+	position: relative
+	padding-top: 43.75%
+
+.logo
+	margin: 0
+	position: absolute
+	top: 30%
+	left: 9%
+	width: 28%
+	img
+		max-width: 100%
+		height: auto
+
+.quote
+	padding: 2rem 1rem
+	background: linear-gradient(to bottom, #0037c3, #008be4)
+	color: #fff
+	font-size: 2.2rem
+	line-height: 2.5rem
+	+media-breakpoint-up(md)
+		position: absolute
+		top: -2.5rem
+		left: 0
+		width: 44%
+		padding: 7rem 2rem 7rem 3rem
+
+.services
+	+media-breakpoint-up(md)
+		position: relative
+	.wrapper
+		background-color: #f8f2e4
+		padding-top: 3rem
+		padding-bottom: 3rem
+	ul
+		li
+			margin-bottom: .3rem
+
+.price-list
+	margin: 10rem 0
+	tr
+		td + td
+			text-align: right
+
+.phone
+	font-weight: bold
+	font-size: 2rem
+
+hr
+	height: .4rem
+	background-color: #000
+
+footer
+	margin: 5rem 0
