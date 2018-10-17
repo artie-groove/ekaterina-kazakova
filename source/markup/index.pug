@@ -7,10 +7,12 @@ block top
 
 block content
 	.services
-		.quote.font-weight-light
-			| &laquo;Хороший юрист тот, который приносит положительный результат&raquo;
+		.quote.font-weight-light.text-right
+			p &laquo;Хороший юрист тот,
+			p который приносит
+			p положительный результат&raquo;
 		.wrapper
-			.row
+			.row.no-gutters
 				.col-md-5.offset-md-6
 					h6.text-uppercase.mb-4
 						| Гражданам, индивидуальным предпринимателям, юридическим лицам
@@ -38,7 +40,6 @@ block content
 						tr
 							td Юридическое сопровождение деятельности
 							td от 5000 рублей/месяц
-				
 
 block footer
 	include ../templates/includes/footer.pug
